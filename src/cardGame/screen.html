@@ -1,0 +1,78 @@
+const cardGameHtml = `<html>
+<head>
+<title>Memory game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="game_title">MEMORY GAME</h1>
+    <div id="winner_announce_container" class="winner_announce_container">
+        <!-- <div id="winner_announce" class="winner_announce">
+
+        </div> -->
+    </div>
+    <div id="game_details_container" class="game_details_container" id="details_container">
+        <div>First player name:</div>
+        <input type="text" id="first_player_name"><br><br>
+        <div>Second player name:</div>
+        <input type="text" id="second_player_name"><br><br>
+
+        <label for="cars">Select game size:</label>
+        <select id="game_size">
+            <option value="4x4">4X4</option>
+            <option value="5x5">5X5</option>
+        </select>
+        <br><br>
+
+        <button onclick="submitGameDetails()">Submit!</button>
+    </div>
+
+
+    
+    <div class="players_container">
+    <div id="player1" class="player1">
+        <!-- <div id="player1_name" class="player1_name"></div>
+        <div id="player1_points" class="player1_points"></div> -->
+    </div>
+    <div id="player2" class="player2">
+        <!-- <div class="player2_name"></div>
+        <div class="player2_points"></div> -->
+    </div>
+
+</div>
+
+<div id="post_game_options_container" class="post_game_options_container">
+    <!-- <div class="post_game_options">
+        <button class="play_again_btn" onclick="playAgain()">Play again</button>
+        <button class="cancel_game_btn" onclick="backHompage()">Back to home page</button>
+    </div> -->
+</div>
+
+<div class="cards_container">
+
+<div id="cards_container5" class="cards_container5">
+    <!-- <div class="card1"></div>
+    <div class="card1"></div>
+    <div class="card1"></div>-->
+</div>
+
+<div id="cards_container4" class="cards_container4">
+    <!-- <div class="card">
+        <div class="card-back">
+            <img class="bitcoin" src="https://imagizer.imageshack.com/img922/501/f4o2ga.png">        
+        </div>
+        <div class="card-front">
+            <img src="/assets/bnb.png" alt="bnb">
+        </div>
+    </div> -->
+    <!-- <div class="card1"></div>
+    <div class="card1"></div> -->
+</div>
+
+</div>
+
+
+<script src="model.js"></script>
+</body>
+</html>`;
+
+export default cardGameHtml;

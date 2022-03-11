@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.square_container {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(200, 25px);
+    /* better 51 but needs to be 200 X 200 */
+}
+
+.world {
+    background-color: tan;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    background-color: antiquewhite;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 40px;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.buy_container {
+    background-color: antiquewhite;
+
+    padding: 10px;
+
+}
+
+.buy_title {
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 1px solid black;
+    text-align: center;
+
+
+}
+
+.buy_btn {
+    transition-duration: 0.4s;
+    border: 2px solid #4CAF50;
+    padding: 8px 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.buy_btn:hover {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+}

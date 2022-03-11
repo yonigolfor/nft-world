@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    background: radial-gradient(circle, rgba(203, 100, 37, 1) 0%, rgba(223, 233, 148, 1) 100%);
+
+}
+
+.game_title {
+    color: black;
+    font-size: 8vh;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.winner_announce {
+    color: rgb(62, 105, 6);
+    font-size: 12vh;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.game_details_container {
+    margin-left: 20px;
+    font-size: larger;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    /* margin: auto;
+    width: 20%;
+    padding: 10px; */
+}
+
+
+
+.cards_container {
+    grid-column: 1 / -1;
+
+    justify-content: center;
+    margin: 180px;
+    margin-top: 0;
+
+}
+
+.cards_container5 {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    /* padding: 100px;
+    padding-top: 10px; */
+
+}
+
+.cards_container4 {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    background-color: transparent;
+    perspective: 1000px;
+    /* padding: 100px;
+    padding-top: 10px; */
+
+
+
+}
+
+
+img {
+    height: 125px;
+    width: 100px;
+}
+
+
+.card {
+    background-color: black;
+    position: relative;
+    height: 170px;
+    width: 120px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.card.visible {
+    transform: rotateY(180deg);
+
+    /* width: 130px;
+    height: 185px; */
+    transition: all .6s ease-in;
+
+
+}
+
+
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(0);
+
+}
+
+
+.card-front {
+    transform: rotateY(-180deg);
+    height: 140px;
+    width: 100px;
+    background-color: grey;
+
+    margin-top: 13px;
+    margin-left: 10px;
+
+}
+
+.bitcoin {
+    margin-top: 18px;
+    justify-self: center;
+
+}
+
+.players_container {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.player1,
+.player2 {
+    font-size: 100px;
+    text-align: center;
+
+}
+
+.post_game_options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.play_again_btn,
+.cancel_game_btn {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.play_again_btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    margin: 20px;
+}
+
+.play_again_btn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cancel_game_btn {
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+    margin: 20px;
+}
+
+.cancel_game_btn:hover {
+    background-color: red;
+    color: white;
+}
+
+/* .player1.active {
+    border-bottom: gray solid 1px;
+    border
+} */
+
+.active {
+    border-bottom: 8px solid rgba(203, 100, 37, 1);
+    /* width: 200px; */
+}
