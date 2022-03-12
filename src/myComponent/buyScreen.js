@@ -331,13 +331,16 @@ export default function BuyScreen({ navigation }){
             <div>
                 <h2>price: {price}</h2> 
                 <button className='buy_btn' onClick={()=>buySquare(price, id, userId, money, navigate)}>Buy</button>
+                <h3>To play Card Memory Game: </h3>
+                <a target="_blank" style={{marginBottom: 15}} href="https://card-memory-game-2f816.web.app/">Click here</a>
+                <h1></h1>
             </div>
             : 
             <h2>*Not for sale</h2>}
             
             
             
-            <button onClick={()=>cancel(navigate, userId, money)}>Back to world</button>
+            <button style={{marginTop: 15}} onClick={()=>cancel(navigate, userId, money)}>Back to world</button>
 
         </div>
     )
